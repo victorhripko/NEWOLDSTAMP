@@ -1,12 +1,11 @@
 {
   "name": "landing",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "source": "src/index.pug",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build --public-url ./"
   },
   "devDependencies": {
     "@parcel/transformer-pug": "2.5.0",
