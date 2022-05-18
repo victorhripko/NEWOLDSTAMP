@@ -1,0 +1,19 @@
+// BASE
+@import './base/variables';
+@import './base/defaults';
+
+// COMPONENTS
+@import './components/icons';
+@import './components/buttons';
+
+// LAYOUT
+@import './layout/general';
+@import './layout/header';
+@import './layout/footer';
+@import './layout/aside';
+
+// VIEW
+@import './view/home-page';
+
+// UTILS
+@import './utils/helpers';

@@ -1,0 +1,30 @@
+:root {
+  // FONTS
+  --default-font: "Rubik", sans-serif;
+
+  // COLORS
+  --purple-900: #0e0439;
+  --purple-800: #302a4b;
+  --purple-600: #503f9d;
+  --purple-500: #6e58ce;
+  --purple-400: #706b86;
+  --purple-200: #d0d0f2;
+  --purple-100: #e6e6f9;
+
+  --yellow-500: #fad05e;
+  --yellow-400: #ffde83;
+  --yellow-100: #fff6ed;
+
+  --gray-200: #f4f4fa;
+  --gray-100: #fcfcfc;
+
+  --green-500: #58c684;
+
+  --red-500: #ee5e67;
+
+  --default-background-color: white;
+  --default-text-color: var(--purple-900);
+
+  // VALUES
+  --default-line-height: 1.2;
+}

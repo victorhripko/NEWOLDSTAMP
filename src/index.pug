@@ -1,0 +1,94 @@
+doctype html
+html(lang="en")
+  head
+    - const FONTS = "https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap";
+
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name="keywords" content="keywords")
+    meta(name="description" content="description")
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin="")
+    link(href=FONTS rel="stylesheet")
+    link(rel="stylesheet" href="./scss/style.scss")
+    title NEWOLDSTAMP &mdash; Victor Hripko
+  body
+    include ./pug/base/icons
+
+    .home-hero
+      include ./pug/layout/header
+      .main-container
+        .home-hero__wrap
+          .home-hero__info
+            h1.home-hero__title
+              | Free Checklist Maker Online
+            p.home-hero__text
+              | Create Your Checklist to Stay on Track
+            a.main-btn(href="#!")
+              | Go to the gallery
+          img.main-section__img(srcset="./assets/images/block-1/frame.png?as=webp 1x, ./assets/images/block-1/frame@2x.png?as=webp 2x",
+              src="./assets/images/block-1/frame@2x.png?as=webp",
+              alt="frame image")
+
+    section.main-section.main-section--gray
+      .main-container
+        h2.main-section__title.show-mobile
+          | How a checklist can help you
+        .main-section__wrap
+          .main-section__col.main-section__col--picture
+            img.main-section__img(srcset="./assets/images/block-2/frame.png?as=webp 1x, ./assets/images/block-2/frame@2x.png?as=webp 2x",
+                src="./assets/images/block-2/frame@2x.png?as=webp",
+                alt="frame image")
+          .main-section__col.main-section__col--info
+            h2.main-section__title.hide-mobile
+              | How a checklist can help you
+            h5.main-section__subtitle
+              | Stay organized
+            p.main-section__text
+              | Are you getting lost in your daily routine? Organize your small and big days. Make a list of tasks you have today, this week, or next month.
+            h5.main-section__subtitle
+              | Relieve your mind
+            p.main-section__text
+              | Afraid of forgetting something? Make a checklist instead of keeping everything in mind. Create a list of things to do when you get ready for a trip, a party, or even go grocery shopping.
+
+    section.main-section.main-section--lt-gray
+      .main-container
+        .main-section__wrap.main-section__wrap--reverse
+          .main-section__col.main-section__col--picture
+            img.main-section__img(srcset="./assets/images/block-3/frame.png?as=webp 1x, ./assets/images/block-3/frame@2x.png?as=webp 2x",
+              src="./assets/images/block-3/frame@2x.png?as=webp",
+              alt="frame image")
+          .main-section__col.main-section__col--info
+            h5.main-section__subtitle
+              | Track your progress
+            p.main-section__text
+              | Challenged yourself to something new? Create an activity checklist to track your progress and stay on track to reach your goals. Incorporate new habits, get rid of old ones.
+            h5.main-section__subtitle
+              | Stay motivated
+            p.main-section__text
+              | Feel the satisfaction of every job done, challenge overcome, memorable life event organized, new habits developed. You got the power!
+            .main-section__btn-wrap
+              a.main-btn(href="#!")
+                | Go to the gallery
+
+    section.main-section.main-section--beige
+      .main-container
+        .main-section__wrap
+          .main-section__col.main-section__col--picture
+            img.main-section__img(srcset="./assets/images/block-4/frame.png?as=webp 1x, ./assets/images/block-4/frame@2x.png?as=webp 2x",
+              src="./assets/images/block-4/frame@2x.png?as=webp",
+              alt="frame image")
+          .main-section__col.main-section__col--info
+            h3.main-section__title.hide-mobile
+              | Why you should use checklist maker
+            h5.main-section__subtitle
+              | You can print them
+            p.main-section__text
+              | We made sure that any checklist design you create can be black-and-white printed.
+            a.main-btn.hide-mobile(href="#!")
+              | Go to the gallery
+
+    include ./pug/layout/footer
+    include ./pug/layout/aside
+    include ./pug/base/scripts

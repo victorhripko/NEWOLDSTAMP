@@ -1,0 +1,15 @@
+include ../mixins/icon
+
+.aside
+  aside.sidebar
+    .sidebar__header
+      button.btn-icon.sidebar__close(type="button" aria-label="close menu" data-aside="close")
+        +icon('close')
+    .sidebar__body
+      nav.sidebar-nav
+        a.sidebar-nav__link(href="#!")
+          | Home
+        a.sidebar-nav__link(href="#!")
+          | Templates gallery
+        a.sidebar-nav__link(href="#!")
+          | Blog

@@ -1,0 +1,79 @@
+.aside {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(14, 4, 57, 0.2);
+  backdrop-filter: blur(10px);
+  animation-name: showAsideBackground;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 150ms;
+  opacity: 0;
+
+  &--open {
+    @media (max-width: 1280px) {
+      display: block;
+    }
+  }
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  height: 100%;
+  width: 26rem;
+  background-color: var(--gray-100);
+  transform: translateX(100%);
+  animation-name: showAsideMenu;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 150ms;
+}
+
+.sidebar__header {
+  padding: 0.5rem 1rem;
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.sidebar__close {
+  margin-left: auto;
+}
+
+.sidebar__body {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.sidebar-nav__link {
+  display: block;
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+  color: var(--default-text-color);
+  text-decoration: none;
+  border-bottom: 0.1rem solid var(--purple-100);
+  background-color: transparent;
+  transition: background-color 150ms ease-in-out;
+
+  &:hover {
+    background-color: var(--gray-200);
+  }
+}
+
+
+@keyframes showAsideBackground {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showAsideMenu {
+  100% {
+    transform: translateX(0);
+  }
+}

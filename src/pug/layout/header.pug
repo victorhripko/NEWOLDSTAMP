@@ -1,0 +1,12 @@
+include ../mixins/icon
+
+header.header
+  a.header__logo(href="#!")
+    | cheqmark
+  nav.header-nav.hide-mobile
+    a.header-nav__link(href="#!")
+      | Blog
+    a.header-nav__link(href="#!")
+      | Templates gallery
+  button.btn-icon.show-mobile(type="button" aria-label="Burger menu" data-aside="open")
+    +icon('burger')

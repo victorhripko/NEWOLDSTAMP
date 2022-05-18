@@ -1,0 +1,29 @@
+include ../mixins/icon
+
+.footer
+  .footer__nav
+    ul.footer-list
+      li.footer-list__item
+        a.footer-list__link(href="#!") Templates gallery
+      li.footer-list__item
+        a.footer-list__link(href="#!") Create checklist
+    ul.footer-list
+      li.footer-list__item
+        a.footer-list__link(href="#!") Terms of use
+      li.footer-list__item
+        a.footer-list__link(href="#!") Privacy
+      li.footer-list__item
+        a.footer-list__link(href="#!") Cookies
+  .footer__info
+    a.footer__logo(href="#!") cheqmark
+    .footer-social
+      a.footer-social__link(href="#!" aria-label="link to twitter" target="_blank")
+        +icon('twitter-filled')(width="30" height="30")
+      a.footer-social__link(href="#!" aria-label="link to pinterest" target="_blank")
+        +icon('pinterest-filled')(width="30" height="30")
+      a.footer-social__link(href="#!" aria-label="link to instagram" target="_blank")
+        +icon('instagram-filled')(width="30" height="30")
+      a.footer-social__link(href="#!" aria-label="link to facebook" target="_blank")
+        +icon('facebook-filled')(width="30" height="30")
+    p.footer__copyright
+      | All rights reserved
